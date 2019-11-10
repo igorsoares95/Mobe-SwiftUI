@@ -22,14 +22,15 @@ struct ContentView: View {
           .foregroundColor(.white)
                 
         TextField("Username", text: $username)
+          .textFieldStyle(DefaultTextFieldStyle())
           .frame(height: 40)
           .frame(width: UIScreen.main.bounds.width - 40)
           .border(Color.white, width: 2)
           .cornerRadius(5)
           .background(Color.clear)
-          .accentColor(Color.green)
         
         SecureField("Password", text: $password)
+          .textFieldStyle(DefaultTextFieldStyle())
           .frame(height: 40)
           .frame(width: UIScreen.main.bounds.width - 40)
           .border(Color.white, width: 2)
